@@ -33,6 +33,13 @@ src/
  ├── lib/
  └── public/
 ```
+
+
+## 🌐 Live Portfolio
+
+🔗 https://princechauhan.vercel.app
+
+
 ## 🚀 Getting Started
 
 To run this project locally:
@@ -54,12 +61,23 @@ To run this project locally:
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+
 ## 📝 Folder Structure Highlights
 
-- `/src/app`: Contains the main application routes (`/about`, `/projects`, `/contact`).
-- `/src/components`: UI elements shared across pages (`Navbar`, `Hero`, `ProjectCard`, `Footer`).
-- `/src/data`: Holds static project definitions (`projects.js`).
+- `/src/app` → Contains the main application pages and layout configuration.
+- `/src/components/layout` → Shared layout components such as Navbar, Footer, and Loading Screen.
+- `/src/components/sections` → Main portfolio sections including Hero, About, Projects, Skills, Experience, and Contact.
+- `/src/components/ui` → Reusable UI components, animations, and interactive elements.
+- `/src/lib/data.ts` → Centralized portfolio data including projects, skills, personal information, and social links.
+- `/public` → Static assets including images, icons, and resume PDF.
 
 ## 🤝 Make It Your Own
 
-Feel free to fork and customize the code! To use it for your own portfolio, just update the data in `src/data/projects.js`, replace the bio text in `src/app/about/page.jsx`, and adjust the Hero greetings.
+Feel free to fork and customize this portfolio for your own use.
+
+To personalize it:
+- Update your personal information and project data inside `src/lib/data.ts`
+- Modify portfolio sections inside `src/components/sections`
+- Customize reusable UI components inside `src/components/ui`
+- Replace static assets and resume files inside `public/`
+- Update metadata and SEO settings in `src/app/layout.tsx`
