@@ -120,7 +120,7 @@ export default function Hero() {
             Projects
           </MagneticButton>
           <a
-            href="/resume.pdf"
+            href="/Princeresume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

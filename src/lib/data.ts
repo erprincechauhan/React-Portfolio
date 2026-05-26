@@ -3,9 +3,9 @@ export const personalInfo = {
   tagline: "AI Engineer • Data Scientist • Full-Stack Developer",
   email: "erprincechauhan@gmail.com",
   github: "https://github.com/erprincechauhan",
-  linkedin: "https://linkedin.com/in/princechauhan",
+  linkedin: "https://www.linkedin.com/in/erprincechauhan",
   bio: "I'm an aspiring AI Engineer and Data Scientist with a passion for building intelligent systems that solve real-world problems. From voice-controlled assistants to video understanding pipelines, I combine deep learning expertise with full-stack development to create end-to-end AI solutions.",
-  resumeUrl: "#experience",
+  resumeUrl: "/Princeresume.pdf",
 };
 
 export const navLinks = [
