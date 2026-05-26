@@ -18,13 +18,16 @@ export const metadata: Metadata = {
   title: "Prince Chauhan — AI Engineer & Data Scientist",
   description:
     "Portfolio of Prince Chauhan — an AI Engineer and Data Scientist building intelligent systems. Explore projects in RAG, NLP, computer vision, and full-stack development.",
-  keywords: [
+   keywords: [
+    "Prince Chauhan",
     "AI Engineer",
-    "Data Scientist",
+    "Backend Developer",
     "Python Developer",
     "Machine Learning",
-    "Portfolio",
-    "Prince Chauhan",
+    "LangChain",
+    "RAG",
+    "FastAPI",
+    "Next.js Portfolio",
   ],
   authors: [{ name: "Prince Chauhan" }],
   openGraph: {
