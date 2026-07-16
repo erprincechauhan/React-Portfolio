@@ -53,11 +53,10 @@ export default function Skills() {
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
-              className={`px-4 py-2 rounded-full text-xs tracking-wider uppercase transition-all duration-300 ${
-                activeCategory === cat
+              className={`px-4 py-2 rounded-full text-xs tracking-wider uppercase transition-all duration-300 ${activeCategory === cat
                   ? "bg-white text-black"
                   : "glass text-white/40 hover:text-white/70"
-              }`}
+                }`}
             >
               {cat}
             </button>
@@ -88,7 +87,9 @@ export default function Skills() {
                   className="absolute inset-0 glass rounded-xl flex flex-col items-center justify-center gap-3 p-4"
                   style={{ backfaceVisibility: "hidden" }}
                 >
-                  <span className="text-3xl">{skill.icon}</span>
+                  <span className="text-3xl">
+                    <skill.icon className="w-8 h-8" />
+                  </span>
                   <span className="text-sm font-medium text-white/70">
                     {skill.name}
                   </span>

@@ -1,3 +1,25 @@
+import { IconType } from "react-icons";
+import {
+  SiPython,
+  SiCplusplus,
+  SiJavascript,
+  SiMysql,
+  SiLangchain,
+  SiGooglegemini,
+  SiFlask,
+  SiFastapi,
+  SiPandas,
+  SiFirebase,
+  SiReact,
+  SiHtml5,
+  SiCss,
+  SiGit,
+  SiGithub,
+  SiRender,
+  SiPostman,
+} from "react-icons/si";
+import { Search, Layers, MessageSquare, Database, Bot } from "lucide-react";
+
 export const personalInfo = {
   name: "Prince Chauhan",
   tagline: "AI/ML Enthusiast • Python & Backend Developer • Building Production-Style AI Systems",
@@ -20,8 +42,9 @@ export interface Skill {
   name: string;
   category: string;
   proficiency: number; // 0–100
-  icon: string;
+  icon: IconType;
 }
+
 
 export const skillCategories = [
   "Programming",
@@ -35,44 +58,44 @@ export const skillCategories = [
 
 export const skills: Skill[] = [
   // Programming
-  { name: "Python", category: "Programming", proficiency: 90, icon: "🐍" },
-  { name: "C++", category: "Programming", proficiency: 70, icon: "⚙️" },
-  { name: "JavaScript", category: "Programming", proficiency: 75, icon: "✦" },
-  { name: "SQL", category: "Programming", proficiency: 75, icon: "🗄️" },
-
+  { name: "Python", category: "Programming", proficiency: 90, icon: SiPython },
+  { name: "C++", category: "Programming", proficiency: 70, icon: SiCplusplus },
+  { name: "JavaScript", category: "Programming", proficiency: 75, icon: SiJavascript },
+  { name: "SQL", category: "Programming", proficiency: 75, icon: SiMysql },
+ 
   // AI / ML
-  { name: "LangChain", category: "AI / ML", proficiency: 80, icon: "🦜" },
-  { name: "RAG Pipelines", category: "AI / ML", proficiency: 80, icon: "🔍" },
-  { name: "FAISS", category: "AI / ML", proficiency: 75, icon: "🧭" },
-  { name: "Whisper", category: "AI / ML", proficiency: 75, icon: "🎙️" },
-  { name: "CLIP", category: "AI / ML", proficiency: 75, icon: "🖼️" },
-  { name: "Gemini API", category: "AI / ML", proficiency: 80, icon: "✨" },
-  { name: "OpenAI API", category: "AI / ML", proficiency: 75, icon: "🤖" },
-  { name: "Prompt Engineering", category: "AI / ML", proficiency: 80, icon: "💬" },
-  { name: "Vector DBs", category: "AI / ML", proficiency: 75, icon: "🗂️" },
-
+  { name: "LangChain", category: "AI / ML", proficiency: 80, icon: SiLangchain },
+  { name: "RAG Pipelines", category: "AI / ML", proficiency: 80, icon: Search },
+  { name: "FAISS", category: "AI / ML", proficiency: 75, icon: Layers },
+  { name: "Whisper", category: "AI / ML", proficiency: 75, icon: Bot },
+  { name: "CLIP", category: "AI / ML", proficiency: 75, icon: Bot },
+  { name: "Gemini API", category: "AI / ML", proficiency: 80, icon: SiGooglegemini },
+  { name: "OpenAI API", category: "AI / ML", proficiency: 75, icon: Bot },
+  { name: "Prompt Engineering", category: "AI / ML", proficiency: 80, icon: MessageSquare },
+  { name: "Vector DBs", category: "AI / ML", proficiency: 75, icon: Database },
+ 
   // Backend
-  { name: "Flask", category: "Backend", proficiency: 85, icon: "🧪" },
-  { name: "FastAPI", category: "Backend", proficiency: 80, icon: "⚡" },
-  { name: "REST API Design", category: "Backend", proficiency: 80, icon: "🔗" },
-
+  { name: "Flask", category: "Backend", proficiency: 85, icon: SiFlask },
+  { name: "FastAPI", category: "Backend", proficiency: 80, icon: SiFastapi },
+  { name: "REST API Design", category: "Backend", proficiency: 80, icon: SiFastapi },
+ 
   // Data
-  { name: "Pandas", category: "Data", proficiency: 80, icon: "📊" },
-
+  { name: "Pandas", category: "Data", proficiency: 80, icon: SiPandas },
+ 
   // Database
-  { name: "MySQL", category: "Database", proficiency: 75, icon: "🐬" },
-  { name: "Firebase Firestore", category: "Database", proficiency: 70, icon: "🔥" },
-
+  { name: "MySQL", category: "Database", proficiency: 75, icon: SiMysql },
+  { name: "Firebase Firestore", category: "Database", proficiency: 70, icon: SiFirebase },
+ 
   // Web
-  { name: "React", category: "Web", proficiency: 65, icon: "⚛️" },
-  { name: "HTML", category: "Web", proficiency: 75, icon: "📄" },
-  { name: "CSS", category: "Web", proficiency: 70, icon: "🎨" },
-
+  { name: "React", category: "Web", proficiency: 65, icon: SiReact },
+  { name: "HTML", category: "Web", proficiency: 75, icon: SiHtml5 },
+  { name: "CSS", category: "Web", proficiency: 70, icon: SiCss },
+ 
   // Tools
-  { name: "Git", category: "Tools", proficiency: 85, icon: "🔀" },
-  { name: "GitHub", category: "Tools", proficiency: 85, icon: "🐙" },
-  { name: "Render", category: "Tools", proficiency: 65, icon: "🚀" },
-  { name: "Postman", category: "Tools", proficiency: 70, icon: "📮" },
+  { name: "Git", category: "Tools", proficiency: 85, icon: SiGit },
+  { name: "GitHub", category: "Tools", proficiency: 85, icon: SiGithub },
+  { name: "Render", category: "Tools", proficiency: 65, icon: SiRender },
+  { name: "Postman", category: "Tools", proficiency: 70, icon: SiPostman },
 ];
 
 export interface Project {
