@@ -15,12 +15,12 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Prince Chauhan — AI Engineer & Data Scientist",
+  title: "Prince Chauhan — AI/ML Enthusiast & Backend Developer",
   description:
-    "Portfolio of Prince Chauhan — an AI Engineer and Data Scientist building intelligent systems. Explore projects in RAG, NLP, computer vision, and full-stack development.",
-   keywords: [
+    "Portfolio of Prince Chauhan — an AI/ML Enthusiast and backend developer building production-style AI systems. Explore projects in RAG, LLM automation, and backend development.",
+  keywords: [
     "Prince Chauhan",
-    "AI Engineer",
+    "AI/ML Enthusiast",
     "Backend Developer",
     "Python Developer",
     "Machine Learning",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Prince Chauhan" }],
   openGraph: {
-    title: "Prince Chauhan — AI Engineer & Data Scientist",
+    title: "Prince Chauhan — AI/ML Enthusiast & Backend Developer",
     description:
-      "Building intelligent systems that solve real-world problems. AI, ML, and full-stack development.",
+      "Building production-style AI systems and scalable backend applications.",
     type: "website",
   },
 };
