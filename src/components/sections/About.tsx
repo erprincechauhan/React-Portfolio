@@ -4,12 +4,14 @@ import { useRef } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import { personalInfo } from "@/lib/data";
+import { SiPython } from "react-icons/si";
+import { Brain, BarChart3, Bot } from "lucide-react";
 
 const focusAreas = [
-  { label: "AI Engineering", icon: "🧠" },
-  { label: "Data Science", icon: "📊" },
-  { label: "Python", icon: "🐍" },
-  { label: "Machine Learning", icon: "🤖" },
+  { label: "AI Engineering", icon: Brain },
+  { label: "Data Science", icon: BarChart3 },
+  { label: "Python", icon: SiPython },
+  { label: "Machine Learning", icon: Bot },
 ];
 
 export default function About() {
