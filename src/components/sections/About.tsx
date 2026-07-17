@@ -79,7 +79,7 @@ export default function About() {
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.4, delay: 0.4 + i * 0.05 }}
                 >
-                  <span>{area.icon}</span>
+                  <area.icon className="w-6 h-6" />
                   <span>{area.label}</span>
                 </motion.div>
               ))}
