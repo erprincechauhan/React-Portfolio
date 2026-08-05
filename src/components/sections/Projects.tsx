@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import Image from "next/image";
 import SectionWrapper from "@/components/ui/SectionWrapper";
 import SpotlightCard from "@/components/ui/SpotlightCard";
 import { projects } from "@/lib/data";
@@ -64,16 +65,18 @@ export default function Projects() {
                 <div className={`p-8 md:p-10 h-full flex flex-col ${i === 0 ? "md:flex-row md:items-center md:gap-12" : ""}`}>
                   {/* Project visual placeholder */}
                   <div
-                    className={`relative rounded-xl overflow-hidden glass mb-6 ${
-                      i === 0 ? "md:mb-0 md:w-1/2 aspect-video" : "aspect-video"
-                    }`}
+                    className={`relative rounded-xl overflow-hidden mb-6 ${i === 0 ? "md:mb-0 md:w-1/2 aspect-video" : "aspect-video"
+                      }`}
                   >
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      {/* Decorative code-like content */}
-                      <div className="text-white/[0.06] font-mono text-xs leading-6 p-4 overflow-hidden whitespace-pre">
-                        {`const ${project.id.replace(/-/g, "_")} = {\n  model: "${project.techStack[0]}",\n  pipeline: "production",\n  status: "deployed"\n}`}
-                      </div>
-                    </div>
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover transition-transform duration-700 hover:scale-105"
+                    />
+                    
+                    
 
                     {/* Floating accent */}
                     <div className="absolute top-3 right-3 flex gap-1.5">

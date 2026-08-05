@@ -101,6 +101,7 @@ export const skills: Skill[] = [
 export interface Project {
   id: string;
   title: string;
+  image: string;
   description: string;
   longDescription: string;
   techStack: string[];
@@ -113,6 +114,7 @@ export const projects: Project[] = [
   {
     id: "video-rag",
     title: "Video-RAG Chatbot",
+    image: "/images/projects/video-rag.png",
     description:
       "Upload videos, ask natural language questions, and get auto-extracted clips with precise timestamps.",
     longDescription:
@@ -125,6 +127,7 @@ export const projects: Project[] = [
   {
     id: "business-intelligence-dashboard",
     title: "Business Intelligence Dashboard",
+    image: "/images/projects/business-dashboard.png",
     description:
       "Interactive analytics dashboard turning raw business data into actionable visual insights.",
     longDescription:
@@ -135,8 +138,22 @@ export const projects: Project[] = [
   },
 
   {
+    id: "iris-knn-dashboard",
+    title: "AI Classification Dashboard — Iris Dataset (KNN)",
+    image: "/images/projects/iris-knn.png",
+    description:
+      "Full-stack ML dashboard for exploring, training, and evaluating a KNN classifier on the Iris dataset.",
+    longDescription:
+      "A full-stack demonstration of the supervised learning workflow built on the classic Iris dataset. A FastAPI backend handles dataset loading, stratified train/test splitting, feature scaling, and training a configurable K-Nearest Neighbors classifier with scikit-learn. The React frontend walks through the entire ML lifecycle across dedicated pages — dataset exploration with distribution charts, preprocessing preview, model training, a prediction playground with per-class probability bars, and an evaluation dashboard with accuracy, precision/recall/F1, and a confusion matrix.",
+    techStack: ["React", "TypeScript", "FastAPI", "scikit-learn", "Tailwind CSS"],
+    githubUrl: "https://github.com/erprincechauhan/iris-knn-dashboard",
+    featured: true,
+  },
+
+  {
     id: "loan-ai",
     title: "AI Loan Approval System",
+    image: "/images/projects/loan-ai.png",
     description:
       "AI-powered loan processing with smart eligibility checking, underwriting, and PDF sanction letter generation.",
     longDescription:
@@ -147,54 +164,36 @@ export const projects: Project[] = [
   },
 
   {
+    id: "recommind-ai",
+    title: "RecomMind AI — Content-Based Resource Recommender",
+    image: "/images/projects/recommind-ai.png",
+    description:
+      "Content-based learning resource recommender using TF-IDF and cosine similarity, with explainable, ranked results.",
+    longDescription:
+      "A full-stack recommendation system where a user picks at least three interests from a fixed taxonomy, and a FastAPI backend ranks a 45-resource catalog by cosine similarity over TF-IDF vectors built from each resource's title, category, tags, and description. Includes a custom rule-based preprocessing pipeline (stopword removal, lemmatization, synonym/abbreviation expansion), automatic fallback to popularity-based ranking when no resource clears the similarity threshold, deterministic tie-breaking, and per-recommendation natural-language explanations (e.g. \"Recommended because: Matches your interest in Machine Learning and Python\"). Also supports resource-to-resource \"more like this\" recommendations and a paginated, filterable catalog browser, backed by a React + TypeScript frontend and a pytest-covered recommendation engine.",
+    techStack: ["React", "TypeScript", "FastAPI", "scikit-learn", "Tailwind CSS", "Framer Motion"],
+    githubUrl: "https://github.com/erprincechauhan/recommind-ai",
+    featured: true,
+  },
+
+  {
     id: "primetrade-assignment",
     title: "Market Sentiment vs. Trader Performance Analysis",
+    image: "/images/projects/primtrade.png",
     description:
       "Statistical analysis of 211K+ trades linking market sentiment (Fear & Greed Index) to trader performance and risk-taking behavior.",
     longDescription:
       "An end-to-end analytical pipeline joining Fear & Greed Index data with 211,224 trade records across 32 accounts (late 2023–mid 2025) to test how sentiment regimes relate to daily PnL, position sizing, and win rates. Ran Shapiro-Wilk, Kruskal-Wallis, Spearman rank correlation, and Chi-square tests. Found a statistically significant negative correlation between sentiment and daily PnL (ρ=−0.25, p=0.027), and that traders significantly increase position sizes during Greed/Extreme Greed regimes (χ²=1950.21, p<0.001) despite stable ~80% win rates across all regimes — evidence that FOMO-driven position sizing, not trade accuracy, drives the performance drop.",
     techStack: ["Python", "Pandas", "NumPy", "SciPy", "Matplotlib", "Seaborn"],
     githubUrl: "https://github.com/erprincechauhan/Primetrade-Assignment",
-    featured: true,
+    featured: false,
   },
 
 
-  // {
-  //   id: "mental-wellness",
-  //   title: "Mental Wellness Chatbot",
-  //   description:
-  //     "AI chatbot providing mental health advice using Llama 2 with document retrieval from PDFs.",
-  //   longDescription:
-  //     "An empathetic AI chatbot built with Streamlit and LangChain that leverages Meta's Llama 2 model. It retrieves relevant information from mental health PDF documents to provide real-time, informed advice to users seeking support.",
-  //   techStack: ["Streamlit", "LangChain", "Llama 2", "PDF Retrieval"],
-  //   githubUrl: "https://github.com/princechauhan",
-  //   featured: true,
-  // },
-  // {
-  //   id: "health-mgmt",
-  //   title: "Health Management System",
-  //   description:
-  //     "Track exercise and food activities with automated timestamps and comprehensive history.",
-  //   longDescription:
-  //     "A Python-based health management system that allows users to log exercise routines and dietary activities. Automatically timestamps all entries and provides a clean interface for reviewing health history over time.",
-  //   techStack: ["Python", "Data Management", "CLI"],
-  //   githubUrl: "https://github.com/princechauhan",
-  //   featured: false,
-  // },
-  {
-    id: "flask-contact",
-    title: "Flask Contact App",
-    description:
-      "Blog-style site with contact form, SQL database storage, and email notifications.",
-    longDescription:
-      "A clean Flask application serving a blog-like website with index, post, about, and contact pages. Contact form submissions are stored in SQLite and trigger email notifications to the site owner via Flask-Mail.",
-    techStack: ["Flask", "SQLAlchemy", "Flask-Mail", "SQLite"],
-    githubUrl: "https://github.com/princechauhan",
-    featured: true,
-  },
    {
     id: "Tkinter-login",
     title: "Tkinter Login Form",
+    image: "/images/projects/tkinter.png",
     description:
       "Tkinter-based Python login app with authentication, image support, and popup alerts for secure user interaction.",
     longDescription:
@@ -204,29 +203,6 @@ export const projects: Project[] = [
     featured: false,
   },
 
-  // {
-  //   id: "jarvis",
-  //   title: "JARVIS AI Assistant",
-  //   description:
-  //     "Voice-controlled AI desktop assistant with intelligent command routing and tool selection.",
-  //   longDescription:
-  //     "A modular AI-powered desktop assistant inspired by Iron Man's JARVIS. Features voice recognition, AI-powered command routing, extensible tool system, and natural language understanding for desktop automation.",
-  //   techStack: ["Python", "Speech Recognition", "AI/ML", "System Tray"],
-  //   githubUrl: "https://github.com/erprincechauhan",
-  //   featured: false,
-  // },
-
-  // {
-  //   id: "flappy-bird",
-  //   title: "Flappy Bird Game",
-  //   description:
-  //     "Classic Flappy Bird clone built with Python featuring smooth gameplay mechanics.",
-  //   longDescription:
-  //     "A faithful recreation of the classic Flappy Bird game using Python and Pygame. Features smooth physics, collision detection, score tracking, and responsive controls.",
-  //   techStack: ["Python", "Pygame"],
-  //   githubUrl: "https://github.com/princechauhan",
-  //   featured: false,
-  // },
 ];
 
 export interface TimelineItem {
