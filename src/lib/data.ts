@@ -170,7 +170,8 @@ export const projects: Project[] = [
     description:
       "Content-based learning resource recommender using TF-IDF and cosine similarity, with explainable, ranked results.",
     longDescription:
-      "A full-stack recommendation system where a user picks interests from a fixed taxonomy, and a FastAPI backend ranks a 45-resource catalog by cosine similarity over TF-IDF vectors built from each resource's title, category, tags, and description. Includes a custom text-preprocessing pipeline (lemmatization, synonym expansion), automatic fallback to popularity-based ranking when no resource clears the similarity threshold, and per-recommendation explanations like \"Recommended because: Matches your interest in Machine Learning and Python.\" Also supports \"more like this\" recommendations and a filterable catalog browser, built with a React + TypeScript frontend and a pytest-covered engine.",    techStack: ["React", "TypeScript", "FastAPI", "scikit-learn", "Tailwind CSS", "Framer Motion"],
+      "A full-stack recommendation system where users pick interests from a fixed taxonomy, and a FastAPI backend ranks a 45-resource catalog using TF-IDF and cosine similarity, with explainable, ranked results and a React + TypeScript frontend.",    
+    techStack: ["React", "TypeScript", "FastAPI", "scikit-learn", "Tailwind CSS", "Framer Motion"],
     githubUrl: "https://github.com/erprincechauhan/recommind-ai",
     featured: true,
   },
