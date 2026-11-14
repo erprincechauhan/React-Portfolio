@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
@@ -30,6 +31,11 @@ export const metadata: Metadata = {
     "Next.js Portfolio",
   ],
   authors: [{ name: "Prince Chauhan" }],
+
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+  },
+
   openGraph: {
     title: "Prince Chauhan — AI/ML Enthusiast & Backend Developer",
     description:
