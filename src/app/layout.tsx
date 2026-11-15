@@ -15,32 +15,84 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Prince Chauhan — AI/ML Enthusiast & Backend Developer",
+  metadataBase: new URL("https://princechauhan.vercel.app"),
+  title: "Prince Chauhan | AI/ML & Python Backend Developer",
   description:
-    "Portfolio of Prince Chauhan — an AI/ML Enthusiast and backend developer building production-style AI systems. Explore projects in RAG, LLM automation, and backend development.",
+    "Official portfolio of Prince Chauhan, an AI/ML enthusiast and Python backend developer. Explore projects in machine learning, RAG systems, FastAPI, and backend development.",
+
   keywords: [
+    "erprincechauhan",
     "Prince Chauhan",
+    "Prince Chauhan Portfolio",
     "AI/ML Enthusiast",
-    "Backend Developer",
     "Python Developer",
+    "Backend Developer",
     "Machine Learning",
-    "LangChain",
-    "RAG",
     "FastAPI",
-    "Next.js Portfolio",
+    "RAG",
+    "Artificial Intelligence",
+    "Web Designer",
   ],
+
   authors: [{ name: "Prince Chauhan" }],
+  creator: "Prince Chauhan",
+  publisher: "Prince Chauhan",
+
+  alternates: {
+    canonical: "/",
+  },
 
   verification: {
     google: process.env.GOOGLE_SITE_VERIFICATION,
   },
 
   openGraph: {
-    title: "Prince Chauhan — AI/ML Enthusiast & Backend Developer",
+    title: "Prince Chauhan | AI/ML & Python Backend Developer",
     description:
-      "Building production-style AI systems and scalable backend applications.",
+      "Explore Prince Chauhan's AI/ML projects, Python backend development, RAG systems, and technical experience.",
+    url: "https://princechauhan.vercel.app/",
+    siteName: "Prince Chauhan Portfolio",
     type: "website",
   },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Prince Chauhan",
+  url: "https://princechauhan.vercel.app/",
+
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://princechauhan.vercel.app/",
+  },
+
+  sameAs: [
+    "https://github.com/erprincechauhan",
+    "https://www.linkedin.com/in/erprincechauhan/",
+    "https://leetcode.com/u/erprincechauhan/",
+    "https://www.instagram.com/princechauhannn_/",
+  ],
+
+  jobTitle: "AI/ML Enthusiast and Backend Developer",
+  description:
+    "Prince Chauhan is an AI/ML enthusiast and Python backend developer working on machine learning, RAG systems, and backend applications.",
+  knowsAbout: [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Python",
+    "Backend Development",
+    "FastAPI",
+    "REST APIs",
+    "RAG Systems",
+    "Large Language Models",
+  ],
 };
 
 export default function RootLayout({
@@ -53,6 +105,13 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${spaceGrotesk.variable} font-sans bg-black text-white`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personSchema).replace(/</g, "\\u003c"),
+          }}
+        />
+
         {children}
       </body>
     </html>

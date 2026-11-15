@@ -128,7 +128,7 @@ export default function Hero() {
 
             {/* Tagline */}
             <motion.p
-              className="max-w-xl text-lg md:text-xl text-white/45 leading-relaxed mb-8"
+              className="max-w-xl text-lg md:text-xl text-white/45 leading-relaxed mb-8 whitespace-pre-line"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{
@@ -212,7 +212,7 @@ export default function Hero() {
             >
               <Image
                 src="/images/prince.png"
-                alt="Prince Chauhan"
+                alt="Prince Chauhan, AI/ML enthusiast and Python backend developer"
                 width={900}
                 height={1200}
                 priority

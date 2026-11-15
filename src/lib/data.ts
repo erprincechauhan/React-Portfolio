@@ -22,12 +22,11 @@ import { Search, Layers, MessageSquare, Database, Bot } from "lucide-react";
 
 export const personalInfo = {
   name: "Prince Chauhan",
-  tagline: "AI/ML Enthusiast • Python & Backend Developer • Building Production-Style AI Systems",
+  tagline: "AI/ML Enthusiast • Python & Backend Developer |\nBuilding Production-Style AI Systems",
   email: "erprincechauhan@gmail.com",
   github: "https://github.com/erprincechauhan",
   linkedin: "https://www.linkedin.com/in/erprincechauhan",
-  bio: "I'm an aspiring AI Engineer and Data Scientist with a passion for building intelligent systems that solve real-world problems. From voice-controlled assistants to video understanding pipelines, I combine deep learning expertise with full-stack development to create end-to-end AI solutions.",
-  resumeUrl: "/Princeresume.pdf",
+  bio: "I'm an aspiring AI Engineer and Data Scientist focused on building intelligent applications using Python, machine learning, and generative AI. My work includes RAG systems, video understanding pipelines, AI-powered automation, and scalable backend applications using FastAPI and Flask.",  resumeUrl: "/Princeresume.pdf",
 };
 
 export const navLinks = [
